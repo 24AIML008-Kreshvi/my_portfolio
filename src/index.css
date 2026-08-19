@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #0a0e13;
+  color: #dbe4ea;
+}
+
+::selection {
+  background: #2dd4bf;
+  color: #0a0e13;
+}

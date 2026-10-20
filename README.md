@@ -51,3 +51,18 @@ src/
 - Push to a public GitHub repo named `portfolio-<rollno>` with a
   proper `.gitignore` (node_modules excluded — already set up by Vite)
   and a meaningful commit message.
+
+
+## AWDF Practical 6 — Full Stack Integration
+
+This portfolio now has a **My Tasks** React section connected to the MongoDB-backed Express REST API from [task-manager-api-24AIML008](https://github.com/24AIML008-Kreshvi/task-manager-api-24AIML008).
+
+1. Start MongoDB Community Server locally.
+2. In the backend project, create `.env` with `MONGO_URI=mongodb://127.0.0.1:27017/awdf_tasks` and run `npm install`, `npm start` on port **5000**.
+3. In this portfolio project, run `npm install`, then `npm run dev` and open **http://localhost:5173**.
+4. Click **Tasks** in the navigation bar. The UI fetches tasks from the backend, with create/update/delete, optimistic creation, confirmations, loading states, and notifications.
+5. To demonstrate an error, stop the backend and click **Retry** in the Tasks section.
+
+If the API is at a different address, add a local `.env` with `VITE_API_URL=http://localhost:5000`. Do not put passwords or database credentials in frontend environment variables.
+
+**Screenshot flow:** start both servers; show empty database; create task; add 3 more; mark 2 complete; show confirmation dialog; delete one and verify database; stop backend and show network error.

@@ -5,7 +5,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
-import Tasks from './components/Tasks';
+import TaskGate from './components/TaskGate';
 
 function App() {
   // Shared data lives here in App and flows down via props.
@@ -43,7 +43,7 @@ function App() {
         <About bio={bio} />
         <Skills skillList={skillList} />
         <Projects />
-        <Tasks />
+        <TaskGate />
       </main>
       <Footer name={studentName} email={email} />
     </div>

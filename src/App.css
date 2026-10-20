@@ -449,3 +449,15 @@
 .confirm-overlay{position:fixed;inset:0;z-index:40;background:#0009;display:grid;place-items:center;padding:1rem}
 .confirm-dialog{background:var(--bg-elevated);border:1px solid #a95454;border-radius:12px;padding:1.5rem;max-width:370px;width:100%}.confirm-dialog p{color:var(--text-dim);margin:1rem 0}
 .task-toast{position:fixed;bottom:1rem;right:1rem;z-index:50;background:#16362e;color:#d7fff5;border:1px solid var(--accent);border-radius:8px;padding:1rem 1.4rem;box-shadow:0 10px 30px #0007}
+
+
+/* Practical 7 auth flow */
+.auth-section{max-width:600px;min-height:540px}
+.auth-form{display:flex;flex-direction:column;gap:.75rem}
+.auth-form label{font:0.8rem var(--mono);color:var(--text-dim)}
+.auth-form input{background:var(--bg-elevated);border:1px solid var(--border);padding:1rem;color:var(--text);border-radius:7px;font:1rem var(--sans)}
+.auth-form button{margin-top:.5rem}
+.auth-switch{color:var(--text-dim);font-size:.85rem;margin-top:1rem}
+.auth-switch button,.auth-session button{border:0;background:transparent;color:var(--accent);cursor:pointer;font:inherit;text-decoration:underline}
+.auth-error{color:#ffaaa4}.auth-info{color:var(--accent)}
+.auth-session{max-width:1100px;margin:2rem auto -3rem;padding:0 1.5rem;display:flex;gap:1rem;align-items:center;justify-content:flex-end;flex-wrap:wrap;color:var(--text-dim);font:0.82rem var(--mono)}

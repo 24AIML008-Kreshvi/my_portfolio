@@ -66,3 +66,10 @@ This portfolio now has a **My Tasks** React section connected to the MongoDB-bac
 If the API is at a different address, add a local `.env` with `VITE_API_URL=http://localhost:5000`. Do not put passwords or database credentials in frontend environment variables.
 
 **Screenshot flow:** start both servers; show empty database; create task; add 3 more; mark 2 complete; show confirmation dialog; delete one and verify database; stop backend and show network error.
+
+
+## Practical 7 — Sign-in Protected Tasks
+
+The Tasks section now prompts for registration and login. The backend hashes passwords with bcryptjs and issues 1-hour JWTs. The React frontend keeps its token only in session storage and includes it in task requests, clears it on log out, and redirects to login after a protected 401. Task forms are shown only to authenticated users.
+
+Run the [Express backend](https://github.com/24AIML008-Kreshvi/task-manager-api-24AIML008) on port 5000 with MongoDB and a locally configured JWT_SECRET; run this portfolio on port 5173 with `npm install && npm run dev`.

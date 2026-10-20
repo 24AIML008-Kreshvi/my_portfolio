@@ -431,3 +431,21 @@
     width: 100%;
   }
 }
+
+
+/* Practical 6: React + MongoDB task manager */
+.task-summary{display:flex;gap:1rem;font:0.82rem var(--mono);color:var(--text-dim);margin-bottom:1.3rem}
+.task-form{display:flex;gap:.7rem;flex-wrap:wrap;margin-bottom:1.2rem}
+.task-form input,.task-form select{background:var(--bg-elevated);border:1px solid var(--border);border-radius:8px;padding:.8rem;color:var(--text);font:0.85rem var(--mono)}
+.task-form input{flex:1;min-width:180px}.task-form select{min-width:115px}
+.task-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.task-card{background:var(--bg-elevated);border:1px solid var(--border);border-radius:10px;padding:1.2rem;display:flex;gap:.8rem;flex-wrap:wrap;align-items:center}
+.task-name{display:flex;gap:.65rem;align-items:center;flex:1;min-width:150px}.task-name input{accent-color:var(--accent)}.task-done .task-name span{text-decoration:line-through;color:var(--text-dim)}
+.task-priority{font:0.65rem var(--mono);text-transform:uppercase;border:1px solid var(--accent-dim);color:var(--accent);border-radius:12px;padding:.3rem .5rem}.priority-high{color:#fb938b;border-color:#a9574c}.priority-low{color:#a8c7ee;border-color:#547a9c}
+.task-actions{display:flex;gap:.6rem;width:100%;justify-content:flex-end}
+.task-actions button{border:1px solid var(--border);background:transparent;color:var(--text);padding:.45rem .7rem;border-radius:6px;cursor:pointer}.task-actions button:hover{border-color:var(--accent)}
+.task-info{padding:2rem;text-align:center;color:var(--text-dim);font:0.85rem var(--mono)}
+.task-error{padding:1.2rem;border:1px solid #a95454;border-radius:8px;color:#ffaaa4}.task-error p{color:var(--text-dim)}
+.confirm-overlay{position:fixed;inset:0;z-index:40;background:#0009;display:grid;place-items:center;padding:1rem}
+.confirm-dialog{background:var(--bg-elevated);border:1px solid #a95454;border-radius:12px;padding:1.5rem;max-width:370px;width:100%}.confirm-dialog p{color:var(--text-dim);margin:1rem 0}
+.task-toast{position:fixed;bottom:1rem;right:1rem;z-index:50;background:#16362e;color:#d7fff5;border:1px solid var(--accent);border-radius:8px;padding:1rem 1.4rem;box-shadow:0 10px 30px #0007}
